@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Happy Birthday Website 2.0 | Aoudumber Bade">
+    <meta name="github" content="https://github.com/Aoudumber-Bade">
+    <title>Valeria Birthday</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="intro">
+    <img class="cerezo cerezo-izq" src="./images/cerezo.gif" alt="">
+    <img class="cerezo cerezo-der" src="./images/cerezo.gif" alt="">
+    <img class="intro-globos izq" src="./images/descarga.png" alt="" style="position:absolute;left:0;bottom:0;width:min(300px,25vw);height:min(300px,25vw);max-width:25vw;object-fit:cover;object-position:right bottom;transform:scaleX(-1);pointer-events:none;z-index:0;-webkit-mask-image:radial-gradient(circle at 100% 100%,#000 55%,transparent 78%);mask-image:radial-gradient(circle at 100% 100%,#000 55%,transparent 78%);">
+    <img class="intro-globos der" src="./images/descarga.png" alt="" style="position:absolute;right:0;bottom:0;width:min(300px,25vw);height:min(300px,25vw);max-width:25vw;object-fit:cover;object-position:right bottom;pointer-events:none;z-index:0;-webkit-mask-image:radial-gradient(circle at 100% 100%,#000 55%,transparent 78%);mask-image:radial-gradient(circle at 100% 100%,#000 55%,transparent 78%);">
+
+    <div class="intro-pantalla" id="pantalla1" style="position:relative;z-index:2">
+        <h1>Feliz Cumpleaños Vale</h1>
+        <img src="./images/inicio.gif" alt="">
+        <p>¿Quieres ver el regalo que te prepare?</p>
+        <div class="intro-botones">
+            <button id="btnSi">Sí</button>
+            <button id="btnNo">No</button>
+        </div>
+    </div>
+
+    <div class="intro-pantalla" id="pantalla2" style="display:none;position:relative;z-index:2">
+        <h1>Pero lo hice para ti...</h1>
+        <img src="./images/ve.gif" alt="">
+        <p>¿Me das una oportunidad?</p>
+        <div class="intro-botones">
+            <button id="btnSi2">Sí</button>
+            <button id="btnNo">No</button>
+        </div>
+    </div>
+
+    <div class="intro-pantalla" id="pantalla3" style="display:none;position:relative;z-index:2">
+        <h1>Me voy a quedar muy triste...</h1>
+        <img src="./images/suplica.gif" alt="">
+        <p>Lo hice con todo mi cariño, andale di que siiii</p>
+        <div class="intro-botones">
+            <button id="btnSi3">Sí</button>
+            <button id="btnNo">No</button>
+        </div>
+    </div>
+
+    <div class="intro-pantalla" id="pantalla4" style="display:none;position:relative;z-index:2">
+        <h1>De esta no te me escapas</h1>
+        <img src="./images/jeje.gif" alt="">
+        <p>Ya borre el no para que digas si jsjsjs</p>
+        <div class="intro-botones">
+            <button id="btnSi4">Sí</button>
+        </div>
+    </div>
+</div>
+
+<div id="wrapper" style="display:none">
+    <div id="wrapper">
+        <div class="flag__birthday">
+            <img src="./images/1.png" alt="" width="350" class="flag__left">
+            <img src="./images/1.png" alt="" width="350" class="flag__right">
+        </div>
+        <div class="content">
+            <div class="left">
+                <div class="title">
+                    <h1 class="happy">
+                        <span style="--t: 4s;">H</span>
+                        <span style="--t: 4.2s;">a</span>
+                        <span style="--t: 4.4s;">p</span>
+                        <span style="--t: 4.6s;">p</span>
+                        <span style="--t: 4.8s;">y</span>
+                    </h1>
+                    <h1 class="birthday">
+                        <span style="--t: 5s;">B</span>
+                        <span style="--t: 5.2s;">i</span>
+                        <span style="--t: 5.4s;">r</span>
+                        <span style="--t: 5.6s;">t</span>
+                        <span style="--t: 5.8s;">h</span>
+                        <span style="--t: 6s;">d</span>
+                        <span style="--t: 6.2s;">a</span>
+                        <span style="--t: 6.4s;">y</span>
+                    </h1>
+                    <div class="hat">
+                        <img src="./images/hat.png" alt="" width="130">
+                    </div>
+                </div>
+            <img class="pastel" src="./images/migaja.gif" alt="">
+            </div>
+            <div class="right">
+                <div class="box__account">
+                    <div class="image">
+                        <img src="./images/parami.jpg" alt="">
+                    </div>
+                    <img class="corona" src="./images/mejor.gif" alt="">
+                    <div class="name">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Una niñita hermosa💗</span>
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <div class="balloon_one">
+                        <img width="100px" src="./images/balloon1.png" alt="">
+                    </div>
+                    <div class="balloon_two">
+                        <img width="100px" src="./images/balloon2.png" alt="">
+                    </div>
+                    <div class="gif__mewmew">
+                        <img src="./images/mewmew.gif" alt="" width="200">
+                    </div>
+                </div>
+                <div class="cricle">
+                    <div class="text__cricle">
+                        <span style="--i: 1;">h</span>
+                        <span style="--i: 2;">a</span>
+                        <span style="--i: 3;">p</span>
+                        <span style="--i: 4;">p</span>
+                        <span style="--i: 5;">y</span>
+                        <span style="--i: 6;">-</span>
+                        <span style="--i: 7;">b</span>
+                        <span style="--i: 8;">i</span>
+                        <span style="--i: 9;">r</span>
+                        <span style="--i: 10;">t</span>
+                        <span style="--i: 11;">h</span>
+                        <span style="--i: 12;">d</span>
+                        <span style="--i: 13;">a</span>
+                        <span style="--i: 14;">y</span>
+                        <span style="--i: 15;">-</span>
+                    </div>
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        <div class="decorate_star star1" style="--t: 15s;"></div>
+        <div class="decorate_star star2" style="--t: 15.2s;"></div>
+        <div class="decorate_star star3" style="--t: 15.4s;"></div>
+        <div class="decorate_star star4" style="--t: 15.6s;"></div>
+        <div class="decorate_star star5" style="--t: 15.8s;"></div>
+        <div class="decorate_flower--one" style="--t: 15s;">
+            <img width="20" src="./images/decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_flower--two" style="--t: 15.3s;">
+            <img width="20" src="./images/decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_flower--three" style="--t: 15.6s;">
+            <img width="20" src="./images/decorate_flower.png" alt="">
+        </div>
+        <div class="decorate_bottom">
+            <img src="./images/decorate.png" alt="" width="100">
+        </div>
+        <div class="smiley__icon">
+            <img src="./images/smiley_icon.png" alt="" width="100">
+        </div>
+        <div class="acciones-centro">
+            <div class="date__of__birth">
+                <span></span>
+            </div>
+            <div class="btn">
+                <button id="btn__letter">
+                    <div class="mail">
+                        Presiona Aqui
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="calendario-modal" id="calendarioModal">
+            <img src="./images/calendario.png" alt="Octubre 2026">
+        </div>
+        <button id="btnVolver">
+        <i class="fa-solid fa-rotate-left"></i> Volver al inicio
+        </button>
+        
+        <div class="boxMail">
+            <i class="fa-solid fa-xmark"></i>
+            <div class="boxMail-container">
+                <div class="card1">
+                    <img class="adorno ad-globo1" src="./images/balloon1.png" alt="" width="60">
+                    <img class="adorno ad-globo2" src="./images/balloon2.png" alt="" width="55">
+                    <img class="adorno ad-flor1" src="./images/decorate_flower.png" alt="" width="22">
+                    <img class="adorno ad-flor2" src="./images/decorate_flower.png" alt="" width="18">
+                    <img class="adorno ad-corazon" src="./images/heart.png" alt="" width="30">
+                    <div class="userImg">
+                        <img src="images/amo.png" alt="">
+                    </div>
+                    <h4 class="username">Para: Valeria 💖<span class="underline"></span></h4>
+
+                    <h3>Happy Birthday</h3>
+                    <div class="imageCute">
+                        <img src="cute1.png" alt="">
+                    </div>
+                </div>
+                <div class="card2">
+                    <div class="card2-content">
+                        <h3>Para Ti!</h3>
+                        <h2>¡Felices 17 añitos, Vale! 💗🎂 Espero que hoy te consientan mucho, que sonrías hasta que te duelan las mejillas y que tengas un cumpleaños
+                             lleno de momentos lindos que puedas guardar con muchísimo cariño. ¿Sabes? Hay algo que siempre me va a parecer bonito, y es la manera tan 
+                             inesperada en la que comenzó todo entre nosotros. Fuiste tú quien se animó a dar el primer paso para conocerme, y pensar que de una 
+                             conversación tan sencilla terminaría naciendo un cariño tan grande es algo que me saca una sonrisa. Si en aquel momento me hubieran dicho 
+                             que llegarías a ser alguien tan importante para mí, probablemente no lo habría imaginado. Con el tiempo, tus mensajes, nuestras conversaciones
+                             y esas pequeñas cosas que compartíamos fueron adquiriendo un significado especial para mí. Poco a poco te fuiste convirtiendo en alguien a 
+                             quien le tenía un cariño diferente, alguien que podía hacer que un día normal tuviera algo bonito. Y creo que eso es lo especial de algunas 
+                             personas: no necesitan hacer grandes cosas para quedarse en el corazón de alguien, simplemente llegan y, con su manera de ser, se vuelven 
+                             inolvidables. Por eso, hoy que es tu cumpleaños, deseo que la vida te sorprenda con cosas maravillosas. Que tengas muchísimas oportunidades
+                             para crecer, que tus sueños se vayan haciendo realidad y que nunca te falten fuerzas para seguir adelante, incluso cuando las cosas no salgan 
+                             como esperabas. Espero que siempre tengas cerca personas que te cuiden, te escuchen, te hagan reír y te recuerden lo valiosa que eres. Y, 
+                             sobre todo, deseo que nunca pierdas esa esencia que te hace ser tú. Que sigas teniendo ilusiones bonitas, que encuentres felicidad en las 
+                             cosas más pequeñas y que, cuando mires atrás, puedas sentirte orgullosa de todo lo que has conseguido. Te mereces vivir una etapa llena de
+                             experiencias bonitas, aprendizajes y recuerdos que algún día te hagan sonreír al recordarlos. Quiero que sepas que te tengo un cariño 
+                             enorme y que me hace feliz haber coincidido contigo en esta vida. Entre tantas personas y tantos caminos diferentes, tuve la suerte de 
+                             conocer a alguien que terminó significando mucho más de lo que habría imaginado al principio. Y eso es algo que valoro de verdad. Disfruta 
+                             mucho tus 17, Vale. Que este nuevo capítulo te traiga motivos para ilusionarte, personas bonitas que acompañen tu camino y muchísima 
+                             felicidad. Espero que hoy te sientas querida, especial y muy feliz, porque es un día que merece celebrarse por todo lo alto.
+                        </h2>
+                        <div class="carta-nav">
+                            <button id="prevPag">‹</button>
+                            <span id="numPag">1 / 1</span>
+                            <button id="nextPag">›</button>
+                        </div>
+                            <!-- NUEVO: gatito a la derecha de la tarjeta -->
+                            <img class="gatito-lado" src="./images/cat.gif" alt="">
+                        </div>
+                        <div class="imageCute2">
+                            <img src="cute2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script>
+    let datetxt = "26 Oct";
+    let datatxtletter = "My love. You are a very special girl. I always silently thank you for coming into my life. Today, I wish you all the best, lots of health, and lots of joy. I always hope we will celebrate many more birthdays like this together. Happy birthday to you.💕";
+    let titleLetter = "To you";
+    let charArrDate = datetxt.split('');
+    let charArrDateLetter = datatxtletter.split('');
+    let charArrTitle = titleLetter.split('');
+    let currentIndex = 0;
+    let currentIndexLetter = 0;
+    let currentIndexTitle = 0;
+    let date__of__birth = document.querySelector(".date__of__birth span");
+    let text__letter = document.querySelector(".text__letter p");
+    let timeoutFecha;
+    function iniciarFecha() {
+    timeoutFecha = setTimeout(function () {
+        timeDatetxt = setInterval(function () {
+            if (currentIndex < charArrDate.length) {
+                date__of__birth.textContent += charArrDate[currentIndex];
+                currentIndex++;
+            }
+            else {
+                let i = document.createElement("i");
+                i.className = "fa-solid fa-star"
+                document.querySelector(".date__of__birth").prepend(i)
+                document.querySelector(".date__of__birth").appendChild(i.cloneNode(true))
+                clearInterval(timeDatetxt)
+            }
+        }, 100)
+    }, 12000)
+}
+    var intervalContent;
+    var intervalTitle;
+    $("#btn__letter").on("click", function () {
+        $(".box__letter").slideDown()
+        setTimeout(function () {
+            $(".letter__border").slideDown();
+        }, 1000)
+        setTimeout(function () {
+            intervalTitle = setInterval(function () {
+                if (currentIndexTitle < charArrTitle.length) {
+                    document.querySelector(".title__letter").textContent += charArrTitle[currentIndexTitle];
+                    let i = document.createElement("i");
+                    i.className = "fa-solid fa-heart"
+                    document.querySelector(".title__letter").appendChild(i)
+                    currentIndexTitle++;
+                }
+                else {
+                    clearInterval(intervalTitle)
+                }
+            }, 100)
+        }, 2000)
+        setTimeout(function () {
+            document.querySelector("#heart__letter").classList.add("animationOp");
+            document.querySelector(".love__img").classList.add("animationOp");
+            document.querySelector("#mewmew").classList.add("animationOp");
+        }, 2800)
+        setTimeout(function () {
+            document.querySelectorAll(".heart").forEach((item) => {
+                item.classList.add("animation")
+            })
+        }, 3500)
+        setTimeout(function () {
+            intervalContent = setInterval(function () {
+                if (currentIndexLetter < charArrDateLetter.length) {
+                    text__letter.textContent += charArrDateLetter[currentIndexLetter];
+                    currentIndexLetter++;
+                }
+                else {
+                    clearInterval(intervalContent)
+                }
+            }, 50)
+        }, 6000)
+    })
+    $(".close").on("click", function () {
+        clearInterval(intervalContent)
+        document.querySelector(".title__letter").textContent = "";
+        text__letter.textContent = "";
+        currentIndexLetter = 0
+        currentIndexTitle = 0
+        document.querySelector("#heart__letter").classList.remove("animationOp");
+        document.querySelector(".love__img").classList.remove("animationOp");
+        document.querySelector("#mewmew").classList.remove("animationOp");
+        document.querySelectorAll(".heart").forEach((item) => {
+            item.classList.remove("animation")
+        })
+        $(".box__letter").slideUp();
+        $(".letter__border").slideUp();
+    })
+
+
+
+    let mailBox = document.querySelector('.mail')
+    let boxmail = document.querySelector('.boxMail')
+    var close = document.querySelector('.fa-xmark')
+    mailBox.onclick = function () {
+        mailBox.classList.toggle('active')
+        boxmail.classList.add('active')
+    }
+
+    close.addEventListener('click', function () {
+        boxmail.classList.remove('active')
+    })
+    function mostrarPrincipal() {
+    document.getElementById('intro').style.display = 'none';
+    document.getElementById('wrapper').style.display = 'block';
+    iniciarFecha();
+    }
+    document.getElementById('btnSi').onclick = mostrarPrincipal;
+    document.getElementById('btnSi2').onclick = mostrarPrincipal;
+    document.getElementById('btnNo').onclick = function () {
+    document.getElementById('pantalla1').style.display = 'none';
+    document.getElementById('pantalla2').style.display = 'block';
+        
+    // "No" de la segunda pantalla -> tercera pantalla triste
+    document.querySelectorAll('#pantalla2 .intro-botones button')[1].onclick = function () {
+    document.getElementById('pantalla2').style.display = 'none';
+    document.getElementById('pantalla3').style.display = 'block';
+    };
+    document.getElementById('btnSi3').onclick = mostrarPrincipal;
+
+    // "No" de la tercera pantalla -> tercera pantalla triste
+    document.querySelectorAll('#pantalla3 .intro-botones button')[1].onclick = function () {
+    document.getElementById('pantalla3').style.display = 'none';
+    document.getElementById('pantalla4').style.display = 'block';
+    };
+    document.getElementById('btnSi4').onclick = mostrarPrincipal;
+    };
+    document.getElementById('btnVolver').onclick = function () {
+    // detener y limpiar la fecha que se escribe sola
+    clearTimeout(timeoutFecha);
+    clearInterval(timeDatetxt);
+    currentIndex = 0;
+    date__of__birth.textContent = '';
+    document.querySelectorAll('.date__of__birth i').forEach(function (el) {
+        el.remove();
+    });
+
+    // cerrar la carta si estaba abierta
+    boxmail.classList.remove('active');
+
+    // volver a la intro, empezando por la primera pantalla
+    document.getElementById('wrapper').style.display = 'none';
+    document.getElementById('pantalla2').style.display = 'none';
+    document.getElementById('pantalla3').style.display = 'none';
+    document.getElementById('pantalla4').style.display = 'none';
+    document.getElementById('pantalla1').style.display = 'block';
+    document.getElementById('intro').style.display = 'flex';
+    };
+
+    // ===== Carta con páginas (se ajusta solo al tamaño de la hoja) =====
+    const h2Carta = document.querySelector('.card2 h2');
+    const contenidoCarta = document.querySelector('.card2-content');
+    const textoOriginal = h2Carta.textContent.replace(/\s+/g, ' ').trim();
+    h2Carta.innerHTML = '<span id="textoCarta"></span>';
+
+    const spanCarta = document.getElementById('textoCarta');
+    const numPag = document.getElementById('numPag');
+    const btnPrev = document.getElementById('prevPag');
+    const btnNext = document.getElementById('nextPag');
+
+    let paginas = [];  
+    let paginaActual = 0;
+
+function mostrarPagina(n, conFade) {
+    paginaActual = n;
+    function poner() {
+        spanCarta.textContent = paginas[n];
+        numPag.textContent = (n + 1) + ' / ' + paginas.length;
+        btnPrev.disabled = (n === 0);
+        btnNext.disabled = (n === paginas.length - 1);
+        spanCarta.style.opacity = 1;
+    }
+    if (conFade) {
+        spanCarta.style.opacity = 0;
+        setTimeout(poner, 250);
+    } else {
+        poner();
+    }
+}
+
+btnPrev.onclick = function () {
+    if (paginaActual > 0) mostrarPagina(paginaActual - 1, true);
+};
+btnNext.onclick = function () {
+    if (paginaActual < paginas.length - 1) mostrarPagina(paginaActual + 1, true);
+};
+// mensaje final (solo se ve en la última página)
+const mensajeFinal = document.createElement('div');
+mensajeFinal.className = 'mensaje-final';
+mensajeFinal.innerHTML = '<div class="mf-texto">Je t\'aime beaucoup</div>' +
+    '<div class="mf-corazones"><i class="fa-solid fa-heart"></i>' +
+    '<i class="fa-solid fa-heart"></i><i class="fa-solid fa-heart"></i></div>';
+h2Carta.appendChild(mensajeFinal);
+
+function actualizarMensaje(n) {
+    mensajeFinal.style.display = (n === paginas.length - 1) ? 'flex' : '';
+}
+
+function calcularPaginas() {
+    // alto disponible para el texto = alto del h2 menos su relleno (la hoja ya trae los márgenes)
+    const estilo = getComputedStyle(h2Carta);
+    const alturaMax = h2Carta.clientHeight
+        - parseFloat(estilo.paddingTop) - parseFloat(estilo.paddingBottom);
+
+    paginas = [];
+    let actual = '';
+    textoOriginal.split(' ').forEach(function (palabra) {
+        const prueba = actual ? actual + ' ' + palabra : palabra;
+        spanCarta.textContent = prueba;
+        if (spanCarta.offsetHeight > alturaMax + 3 && actual) {
+            paginas.push(actual);
+            actual = palabra;
+        } else {
+            actual = prueba;
+        }
+    });
+    if (actual) paginas.push(actual);
+
+    // si el mensaje no cabe debajo del último texto, va solo en una página aparte
+    spanCarta.textContent = paginas[paginas.length - 1];
+    mensajeFinal.style.display = 'flex';
+    const ocupado = spanCarta.offsetHeight + mensajeFinal.offsetHeight
+        + parseFloat(getComputedStyle(mensajeFinal).marginTop);
+    mensajeFinal.style.display = '';
+    if (ocupado > alturaMax + 3) paginas.push('');
+}
+
+// copia de la hoja (título + texto) que se usa para la animación de giro
+function crearHoja(texto) {
+    const hoja = document.createElement('div');
+    hoja.className = 'hoja-giro';
+    const cuerpo = h2Carta.cloneNode(true);
+    const span = cuerpo.querySelector('span');
+    span.removeAttribute('id');
+    span.removeAttribute('style');
+    span.textContent = texto;
+    hoja.appendChild(document.querySelector('.card2 h3').cloneNode(true));
+    hoja.appendChild(cuerpo);
+    contenidoCarta.appendChild(hoja);
+    return hoja;
+}
+
+let girando = false;
+
+function mostrarPagina(n, conAnim) {
+    const anterior = paginaActual;
+    paginaActual = n;
+    numPag.textContent = (n + 1) + ' / ' + paginas.length;
+    btnPrev.disabled = (n === 0);
+    btnNext.disabled = (n === paginas.length - 1);
+
+    // sin animación: limpiar cualquier hoja a medio girar y mostrar la página
+    if (!conAnim) {
+        document.querySelectorAll('.hoja-giro').forEach(function (h) { h.remove(); });
+        girando = false;
+        spanCarta.textContent = paginas[n];
+        spanCarta.style.opacity = 1;
+        actualizarMensaje(n);
+        return;
+    }
+
+    girando = true;
+    const opciones = { duration: 900, easing: 'cubic-bezier(.45,.05,.35,1)', fill: 'forwards' };
+
+    if (n > anterior) {
+        // la hoja actual se levanta y gira hacia el lomo; debajo ya está la página siguiente
+        const hoja = crearHoja(paginas[anterior]);
+        spanCarta.textContent = paginas[n];
+        actualizarMensaje(n);
+        hoja.animate([
+            { transform: 'rotateY(0deg)',    filter: 'brightness(1)' },
+            { transform: 'rotateY(-100deg)', filter: 'brightness(.8)' }
+        ], opciones).onfinish = function () {
+            hoja.remove();
+            girando = false;
+        };
+    } else {
+        // la hoja con la página anterior vuelve desde el lomo y tapa la actual
+        const hoja = crearHoja(paginas[n]);
+        hoja.animate([
+            { transform: 'rotateY(-100deg)', filter: 'brightness(.8)' },
+            { transform: 'rotateY(0deg)',    filter: 'brightness(1)' }
+        ], opciones).onfinish = function () {
+            spanCarta.textContent = paginas[n];
+            actualizarMensaje(n);
+            hoja.remove();
+            girando = false;
+        };
+    }
+}
+
+btnPrev.onclick = function () {
+    if (!girando && paginaActual > 0) mostrarPagina(paginaActual - 1, true);
+};
+btnNext.onclick = function () {
+    if (!girando && paginaActual < paginas.length - 1) mostrarPagina(paginaActual + 1, true);
+};
+
+// calcular las páginas cada vez que se abre la carta
+document.querySelector('.mail').addEventListener('click', function () {
+    document.fonts.ready.then(function () {
+        calcularPaginas();
+        mostrarPagina(0, false);
+    });
+});
+
+// al cerrar la carta, volver a la primera página
+close.addEventListener('click', function () {
+    mostrarPagina(0, false);
+});
+const snoopyImg = document.querySelector('#pantalla1 img');
+const snoopyRuta = snoopyImg.getAttribute('src');
+setInterval(function () {
+    if (document.getElementById('intro').style.display !== 'none') {
+        snoopyImg.src = snoopyRuta + '?r=' + Date.now();
+    }
+}, 4000);   // cada 4 segundos; ajusta al largo real de tu gif
+
+// ===== Calendario al tocar la fecha =====
+const calModal = document.getElementById('calendarioModal');
+document.querySelector('.date__of__birth').addEventListener('click', function () {
+        calModal.classList.add('active');
+});
+    calModal.addEventListener('click', function () {
+        calModal.classList.remove('active');
+});
+</script>
+
+</html>
